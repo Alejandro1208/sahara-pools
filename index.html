@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>SAHARA POOLS</title>
+</head>
+<body>
+    <nav id="menu">
+        <div id="logo"><img src="/img/logo.jpg" alt="logo" width="150px"></div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="menu-items">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#servicio1">Servicio 1</a></li>
+            <li><a href="#servicio2">Servicio 2</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#presupuesto" class="special-button">Pedir presupuesto &rarr;</a></li>
+        </ul>
+    </nav>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Pedir presupuesto</h2>
+            <form>
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <div id="banner">
+        <div class="content">
+            <h1>SAHARA POOLS</h1>
+            <p>Desde 1990 aportando calidad y servicio. <br>
+                No importa el tamaño de su obra, realizamos con éxito todo tipo de proyecto.</p>
+            <button>Contacto</button>
+            <button>Ver más</button>
+        </div>
+    </div>
+
+    <section id="quienes-somos">
+        <div class="card" data-aos="fade-up">
+            <h1>Quienes somos</h1>
+            <p>Nació en 1990, dedicada a la realización de trabajos de arenados y pinturas industriales. Desde entonces hemos crecido con objetivos claros:</p>
+            <ul>
+                <li>Trabajar con las mejores materias primas, para obtener la mayor calidad en nuestros servicios.</li>
+                <li>Satisfacer las necesidades de nuestros clientes, cubriendo sus requerimientos y respetando los plazos de entrega de los trabajos; esto nos posiciona como una empresa confiable y segura.</li>
+                <li>Ofrecer la mejor atención personalizada y especializada con el valor agregado que nuestra experiencia y reconocimiento en el mercado nos brindan.</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <h2 class="servicios-title">Servicios</h2>
+      <div class="card-servicios" id="tratamiento">
+        <div class="card-content">
+          <h2>Tratamiento y revestimiento de superficies</h2>
+          <ul class="services">
+            <li><a href="#">Arenado</a></li>
+            <li><a href="#">Granallado</a></li>
+            <li><a href="#">Pintura o revestimiento</a></li>
+            <li><a href="#">Pintura para Piscinas</a></li>
+            <li><a href="#">Revestimiento para Tanques</a></li>
+            <li><a href="#">Revestimiento para piscinas</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="card-servicios" id="construccion">
+        <div class="card-content">
+          <h2>Construcción y mantenimiento de piscinas</h2>
+          <ul class="services">
+            <li><a href="#">Construcción y reformas de piscinas en Hormigón Armado</a></li>
+            <li><a href="#">Reparaciones de piscinas de hormigón</a></li>
+            <li><a href="#">Personalización de diseño de piscinas</a></li>
+            <li><a href="#">Reformas de piscinas existentes</a></li>
+            <li><a href="#">Impermeabilización de piscinas</a></li>
+            <li><a href="#">Coronación (instalación del borde alrededor de la piscina)</a></li>
+            <li><a href="#">Puesta en marcha de la piscina.</a></li>
+          </ul>
+        </div>
+      </div>
+    
+
+
+
+    <div class="gallery">
+        <div class="item">
+          <img src="/img/carrusel/imagen1.jpg" alt="Imagen 1">
+          <div class="description">Descripción de la imagen 1</div>
+        </div>
+        <div class="item">
+          <img src="/img/carrusel/imagen2.jpg" alt="Imagen 1">
+          <div class="description">Descripción de la imagen 1</div>
+        </div>
+        <div class="item">
+          <img src="/img/carrusel/imagen3.jpg" alt="Imagen 1">
+          <div class="description">Descripción de la imagen 1</div>
+        </div>
+        <div class="item">
+          <img src="/img/carrusel/imagen4.jpg" alt="Imagen 1">
+          <div class="description">Descripción de la imagen 1</div>
+        </div>
+        <div class="item">
+          <img src="/img/carrusel/imagen5.jpg" alt="Imagen 1">
+          <div class="description">Descripción de la imagen 1</div>
+        </div>
+        <div class="item">
+          <img src="/img/carrusel/imagen6.jpg" alt="Imagen 1">
+          <div class="description">Descripción de la imagen 1</div>
+        </div>
+        <div class="item">
+          <img src="/img/carrusel/imagen7.jpg" alt="Imagen 1">
+          <div class="description">Descripción de la imagen 1</div>
+        </div>
+        <div class="item">
+          <img src="/img/carrusel/imagen8.jpg" alt="Imagen 1">
+          <div class="description">Descripción de la imagen 1</div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+        <div class="footer-content">
+          <div class="logo">
+            <img src="ruta-al-logo" alt="Logo">
+          </div>
+          <nav class="menu">
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </nav>
+          <div class="copyright">
+            <p>&copy; 2022 Tu Empresa</p>
+          </div>
+        </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
