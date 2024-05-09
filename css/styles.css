@@ -599,18 +599,91 @@ form input[type="submit"]:hover {
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 20px;
+        padding-top: 100px;
+        padding-bottom: 120px;
       }
 
       .menu{
         margin: 0px;
+      }
+      .menu ul{
+        padding: 0%;
+        flex-direction: column;
         display: flex;
         text-align: center;
         align-items: center;
         justify-content: center;
       }
-      .menu ul{
-        padding: 0%;
-      }
   }
 /*FIN DEL FOOTER*/
+
+
+
+
+/*REDES*/
+.redes-sociales {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+
+.redes-sociales a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.redes-sociales a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.boton-instagram {
+  background-color: #C13584;
+}
+
+.boton-tiktok {
+  background-color: #000;
+}
+
+.boton-whatsapp {
+  background-color: #25D366;
+}
+
+.boton-facebook {
+  background-color: #1877F2;
+}
+
+/* Estilos para el botón de WhatsApp fijo abajo a la derecha */
+.boton-whatsapp-fijo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.boton-whatsapp-fijo a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 45px;
+  background-color: #25D366;
+  transition: background-color 0.3s ease;
+}
+
+.boton-whatsapp-fijo a:hover {
+  background-color: #128C7E;
+}
+/*FIN DEL REDES*/

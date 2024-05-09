@@ -3,9 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/construccion-y-mantenimiento.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>SAHARA POOLS - CONSTRUCCION Y MANTENIMIENTOS</title>
 </head>
 <body>
-    
+    <nav id="menu">
+        <div id="logo"><img src="/img/logo.jpg" alt="logo" width="150px"></div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="menu-items">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/servicios/tratamientos.html">Tratamientos</a></li>
+            <li><a href="/servicios/construccion-y-mantenimiento.html">Construccion y Mantenimiento</a></li>
+            <li><a href="#presupuesto" class="special-button">Pedir presupuesto &rarr;</a></li>
+        </ul>
+    </nav>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Pedir presupuesto</h2>
+            <form>
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="filtro"></div>
+        <h1 class="titulo">Construcion y mantenimiento</h1>
+    </div>
+
+    <div class="contenido">
+        <h2>¿Te imaginas disfrutando del verano en tu propia piscina?</h2>
+        <p>En nuestra empresa, nos especializamos en la construcción y reformas de piscinas en hormigón armado, ofreciendo soluciones personalizadas que se adaptan a tus necesidades y deseos.</p>
+        <p>Nos especializamos en construir y renovar piscinas en hormigón armado, adaptándonos a tus deseos y necesidades.</p>
+      
+        <h3>¿Por qué elegirnos para tu proyecto de piscina?</h3>
+        <ul>
+          <li>Experiencia y Pasión: Nuestro equipo cuenta con años de experiencia y está apasionado por crear espacios acuáticos que te hagan sonreír.</li>
+          <li>Personalización Total: Cada piscina es única, al igual que tú. Trabajamos contigo para diseñar una piscina que refleje tu estilo y se adapte perfectamente a tu hogar o Industria.</li>
+          <li>Durabilidad y Resistencia: El hormigón armado asegura que tu piscina sea resistente y duradera, para que puedas disfrutarla durante muchos veranos sin preocupaciones.</li>
+          <li>Satisfacción Garantizada: Nos esforzamos por superar tus expectativas en cada etapa del proceso, desde la planificación hasta la finalización.</li>
+        </ul>
+      
+        <h3>Descubre la Durabilidad de las Piscinas de Hormigón:</h3>
+        <p>Las piscinas de hormigón son el clásico atemporal de la construcción de piscinas. Construidas de forma tradicional con muros de hormigón y pintadas o revestidas, ofrecen una combinación perfecta de resistencia, durabilidad y la libertad de personalización en tamaño y forma, especialmente aquellas construidas con hormigón armado.</p>
+      
+        <!-- Tarjetas de ventajas -->
+        <div class="tarjetas">
+          <div class="tarjeta">
+            <h3>Ventajas:</h3>
+            <ul>
+              <li>Resistencia y Durabilidad</li>
+              <li>Personalización Total</li>
+            </ul>
+          </div>
+          <div class="tarjeta">
+            <h3>Independientemente de si se revisten o pintan, las piscinas de hormigón siguen siendo la opción preferida por su calidad y versatilidad.</h3>
+            <p>No importa el estilo que elijas, una piscina de hormigón te garantiza elegancia y rendimiento a largo plazo.</p>
+          </div>
+        </div>
+      
+        <h3>¡Descubre la excelencia en construcción de piscinas con nuestro equipo de expertos en hormigón!</h3>
+      
+        <!-- Galería de imágenes -->
+        <div class="galeria">
+          <img src="/img/carrusel/imagen5.jpg" alt="Imagen de muestra 1">
+          <img src="/img/carrusel/imagen8.jpg" alt="Imagen de muestra 2">
+          <img src="/img/carrusel/imagen9.jpg" alt="Imagen de muestra 3">
+        </div>
+      
+        <h3>CARACTERÍSTICAS</h3>
+      
+        <!-- Tarjeta de características -->
+        <div class="tarjeta">
+          <h4>Las características generales de una piscina de obra son las siguientes:</h4>
+          <ul>
+            <li>La forma de la piscina la elige el cliente.</li>
+            <li>Pueden ser elevadas o enterradas.</li>
+            <!-- Más características aquí -->
+          </ul>
+        </div>
+      
+        <h3>VENTAJAS de las Piscinas de Hormigón</h3>
+      
+        <!-- Tarjeta de ventajas -->
+        <div class="tarjeta">
+          <h4>Las piscinas de hormigón ofrecen una serie de ventajas que las convierten en una opción popular y confiable:</h4>
+          <ul>
+            <li>Amplia Experiencia en Reparaciones</li>
+            <li>Resistencia y Durabilidad</li>
+            <!-- Más ventajas aquí -->
+          </ul>
+        </div>
+      
+        <h3>CONSTRUCCION</h3>
+      
+        <!-- Tarjeta de proceso de construcción -->
+        <div class="tarjeta">
+          <h4>Proceso de Construcción de tu Piscina de Ensueño</h4>
+          <ol>
+            <li>Preparación del Terreno</li>
+            <li>Excavación</li>
+            <!-- Más pasos aquí -->
+          </ol>
+        </div>
+      </div>
+
+
+      <!-- Botones de redes sociales fijos a la derecha -->
+<div class="redes-sociales">
+    <a href="#" class="boton-instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="boton-tiktok"><i class="fab fa-tiktok"></i></a>
+    <a href="#" class="boton-facebook"><i class="fab fa-facebook"></i></a>
+  </div>
+  
+  <!-- Botón de WhatsApp fijo abajo a la derecha -->
+  <div class="boton-whatsapp-fijo">
+    <a href="#"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+    <script src="/js/script.js"></script>
 </body>
 </html>
