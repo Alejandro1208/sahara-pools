@@ -417,3 +417,66 @@ body {
     background-color: #128C7E;
   }
   /*FIN DEL REDES*/
+
+
+
+  /*FOOTER*/
+  .footer-content {
+    overflow: hidden;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo img {
+    max-width: 100px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .copyright p {
+    margin: 0;
+  }
+  @media (max-width: 600px){
+        .copyright p {
+        margin: 0;
+        font-size: 14px;
+      }
+      .footer-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 120px;
+      }
+
+      .menu{
+        margin: 0px;
+      }
+      .menu ul{
+        padding: 0%;
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+  }
+/*FIN DEL FOOTER*/

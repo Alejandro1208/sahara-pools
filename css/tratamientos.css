@@ -261,38 +261,58 @@ body {
     padding: 0;
   }
   
-  .contenido {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+/* Estilos para el contenido principal */
+.contenido {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+
+.tarjeta {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.tarjeta p {
+  color: #666;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Animación de entrada */
+.tarjeta {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
   }
-  
-  .contenido h2 {
-    font-size: 24px;
-    color: #333;
-    margin-top: 30px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .contenido h3 {
-    font-size: 20px;
-    color: #444;
-    margin-top: 20px;
-  }
-  
-  .contenido p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #666;
-  }
-  
-  /* Estilos específicos para la sección "TRABAJOS REALIZADOS" */
-  .contenido h3:last-of-type {
-    margin-top: 50px; /* Espacio adicional después del último título */
-  }
-  
-  .contenido p:last-of-type {
-    margin-bottom: 50px; /* Espacio adicional después del último párrafo */
-  }
+}
+
 /*FIN DE CONTENIDO*/
 
 
@@ -363,3 +383,68 @@ body {
     background-color: #128C7E;
   }
   /*FIN DEL REDES*/
+
+
+
+
+
+  /*FOOTER*/
+  .footer-content {
+    overflow: hidden;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo img {
+    max-width: 100px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .copyright p {
+    margin: 0;
+  }
+  @media (max-width: 600px){
+        .copyright p {
+        margin: 0;
+        font-size: 14px;
+      }
+      .footer-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 120px;
+      }
+
+      .menu{
+        margin: 0px;
+      }
+      .menu ul{
+        padding: 0%;
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+  }
+/*FIN DEL FOOTER*/
